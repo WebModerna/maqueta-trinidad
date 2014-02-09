@@ -1,0 +1,414 @@
+@import url(normalizador.css)
+
+/*Las variables*/
+amarillo_patito = #FFFF66
+azul = #007BC4
+celeste = #21AECE
+blanco = rgb(235,223,250)
+blanco_transparente = rgba(255,255,255,0.5)
+naranja = #E68C29
+negro = #414141
+negro_transparente  = rgba(0,0,0,0.6)
+negruzco = rgba(0,0,0,0.25)
+teal_claro = #006666
+teal_oscuro = #003333
+verde_claro = #6BAA58
+verde_transparente = rgba(54,136,29,0.5)
+
+/*Las Funciones*/
+border-radius()
+	border-radius arguments
+	-o-border-radius arguments
+	-ms-border-radius arguments
+	-moz-border-radius arguments
+	-webkit-border-radius arguments
+box-shadow()
+	box-shadow arguments
+	-o-box-shadow arguments
+	-ms-box-shadow arguments
+	-moz-box-shadow arguments
+	-webkit-box-shadow arguments
+box-shadow_lindo()
+	box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-o-box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-ms-box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-moz-box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-webkit-box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+text-shadow()
+	text-shadow arguments
+	-o-text-shadow arguments
+	-ms-text-shadow arguments
+	-moz-text-shadow arguments
+	-webkit-text-shadow arguments
+transform()
+	transform arguments
+	-o-transform arguments
+	-ms-transform arguments
+	-moz-transform arguments
+	-webkit-transform arguments
+transition()
+	transition arguments
+	-o-transition arguments
+	-ms-transition arguments
+	-moz-transition arguments
+	-webkit-transition arguments
+background_header()
+	background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmY5OSIgc3RvcC1vcGFjaXR5PSIwLjczIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDY2NjYiIHN0b3Atb3BhY2l0eT0iMC43MyIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+')
+	background -moz-linear-gradient(top, rgba(255,255,153,0.63) 0%, rgba(0,102,102,0.63) 100%)
+	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,153,0.63)), color-stop(100%,rgba(0,102,102,0.73)))
+	background -webkit-linear-gradient(top, rgba(255,255,153,0.63) 0%,rgba(0,102,102,0.63) 100%)
+	background -o-linear-gradient(top, rgba(255,255,153,0.63) 0%,rgba(0,102,102,0.63) 100%)
+	background -ms-linear-gradient(top, rgba(255,255,153,0.63) 0%,rgba(0,102,102,0.63) 100%)
+	background linear-gradient(to bottom, rgba(255,255,153,0.76) 0%,rgba(0,102,102,0.63) 100%)
+	/*filter: unquote('progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffff99', endColorstr='#ba006666',GradientType=0 )');*/
+background_boton()
+	background rgb(0,102,102)
+	background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+')
+	background -moz-linear-gradient(top, rgba(0,102,102,1) 0%, rgba(0,51,51,1) 100%)
+	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,102,102,1)), color-stop(100%,rgba(0,51,51,1)))
+	background -webkit-linear-gradient(top, rgba(0,102,102,1) 0%,rgba(0,51,51,1) 100%)
+	background -o-linear-gradient(top, rgba(0,102,102,1) 0%,rgba(0,51,51,1) 100%)
+	background -ms-linear-gradient(top, rgba(0,102,102,1) 0%,rgba(0,51,51,1) 100%)
+	background linear-gradient(to bottom, rgba(0,102,102,1) 0%,rgba(0,51,51,1) 100%)
+	/*filter unquote('progid:DXImageTransform.Microsoft.gradient( startColorstr='#006666', endColorstr='#003333',GradientType=0 )')*/
+/*Los Prerender*/
+@font-face
+	font-family 'icomoon'
+	src url('fonts/icomoon.eot?-a6mqj2')
+	src url('fonts/icomoon.eot?#iefix-a6mqj2') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-a6mqj2') format('woff'),
+		url('fonts/icomoon.ttf?-a6mqj2') format('truetype'),
+		url('fonts/icomoon.svg?-a6mqj2#icomoon') format('svg')
+	font-weight normal
+	font-style normal
+
+@font-face
+	font-family 'Open Sans'
+	font-style normal
+	font-weight 400
+	src: url('fonts/open-sans.eot')
+	src: local('OpenSans'), url('fonts/open-sans.eot') format('embedded-opentype'), url('fonts/open-sans.ttf') format('truetype'), url('fonts/open-sans.svg#OpenSans') format('svg'), url('fonts/open-sans.woff') format('woff')
+/*Las etiquetas*/
+body
+	background amarillo_patito
+	color negro
+	font-family 'Open Sans'
+	font-size 16px
+	text-align center
+
+footer
+	background verde_claro
+	color blanco
+	padding 1em
+	text-shadow(0px -1px 0px rgba(0,0,0,0.25))
+
+	.redes_sociales
+		margin 1em auto
+
+		ul
+			padding 0
+			margin 0
+
+			li
+				display inline-block
+				a
+					color blanco
+					font-family 'icomoon'
+					font-size 2em
+					padding 0.2em
+					text-decoration none
+					transition(all 0.3s ease-out)
+
+					&:hover
+						color negro
+					&:active
+						color naranja
+
+				.facebook
+					&:before
+						content "\e600"
+				.feed
+					&:before
+						content "\e604"
+				.google
+					&:before
+						content "\e601"
+				.mail
+					&:before
+						content "\e602"
+				.twitter
+					&:before
+						content "\e603"
+
+header
+	background_header()
+	
+	nav
+		background verde_claro
+		overflow hidden
+		text-align left
+
+		ul
+			height 0
+			margin 0
+			opacity 0
+			padding 0
+			transition(all 0.4s ease-in-out)
+			visibility hidden
+
+			li
+				
+				a
+					background verde_transparente
+					color blanco
+					display block
+					font-size 1.2em
+					padding 0.7em 1em
+					text-decoration none
+					text-shadow(0px -1px 0px rgba(0,0,0,0.25))
+					transition(all 0.3s ease-in-out)
+
+					&:hover
+						background negro_transparente
+
+			.current-menu-item
+			.current_page_item
+				a
+					background naranja
+
+					&:hover
+						color naranja
+	
+	#menu
+		border none
+		background none
+		margin 0.2em
+		
+		img
+			width 40px
+
+	.logos
+		overflow hidden
+
+		.logo
+			display inline-block
+			vertical-align middle
+			
+			img
+				width 100px
+
+		.trinidad
+			display inline-block
+			vertical-align middle
+			
+			figcaption
+				color amarillo_patito
+				font-size 19px
+				font-weight lighter
+			img
+				width 240px
+
+section
+	.slideshow_home
+		position relative
+
+		.cycle-slideshow
+			box-shadow(0px 0px 12px 3px #000)
+			margin 0 auto
+			max-width 300px
+
+			img
+				width 100%
+	
+			.navegacion
+				overflow hidden
+				position absolute
+				top 40%
+				width 100%
+				z-index 124
+				
+				a
+					color negro_transparente
+					display inline-block
+					font-family 'icomoon'
+					font-size 2em
+					margin 0 0.2em
+					text-decoration none
+					text-shadow(0px -1px 0px rgba(0,0,0,0.25))
+
+					&:hover
+						color amarillo_patito
+					&:active
+						color naranja
+						
+				
+				.next
+					border-radius 0 9px 9px 0
+					float right
+					
+					&:before
+						content "\e605"
+
+				.back
+					border-radius 9px 0 0 9px
+					float left
+
+					&:before
+						content "\e608"
+
+	.mensaje_home
+		h3
+			color blanco
+			font-weight normal
+
+/*Los ids*/
+#top_bg
+	background negro_transparente
+	position absolute
+	top 2em
+	height 45em
+	width 100%
+	z-index -1
+
+/*Las clases*/
+.ir_arriba
+	bottom 0.1em
+	color negro_transparente
+	font-family 'icomoon'
+	font-size 2em
+	position fixed
+	right 0.2em
+	text-decoration none
+	&:before
+		content "\e606"
+	&:hover
+	&:active
+		color naranja
+
+.posts
+	article
+		box-shadow(0px 0px 2px #000)
+		margin auto
+		overflow hidden
+		padding 0.5em
+		text-align left
+
+		figure
+			max-width 300px
+			margin 0.5em auto
+			text-align center
+
+			figcaption
+				background celeste
+				border-radius(0 0 0.5em 0.5em)
+				box-shadow(1px 1px 1px negro)
+				color blanco
+				display inline-block
+				margin-top -1em
+				padding 0.3em 0.5em
+				position relative
+				text-shadow(0px -1px 0px rgba(0,0,0,0.25))
+				z-index -1
+
+			img
+				border-radius(0.5em)
+				margin-bottom -1px
+				width 100%
+
+		.resumen
+			overflow hidden
+
+			h3
+				text-align center
+
+			.ver_mas
+				background_boton()
+				border 2px solid verde_claro
+				border-radius(0.5em)
+				box-shadow_lindo()
+				color amarillo_patito
+				display inline-block
+				float right
+				margin 1em auto
+				padding 0.3em 0.5em
+				text-decoration none
+				transition(all 0.4s ease-in-out)
+				
+				&:hover
+					background naranja
+					color blanco
+			
+			.tags
+				float left
+				display inline-block
+				border 1px solid olive
+
+.widget_home
+	article
+		figure
+			background_boton()
+			border 4px solid verde_claro
+			border-radius(1em)
+			display block
+			margin 1em auto
+			max-width 300px
+			overflow hidden
+			padding 0 0 1em 0
+
+			figcaption
+				a
+					color amarillo_patito
+					transition(all 0.3s ease-in-out)
+					text-decoration none
+					&:hover
+						color blanco
+
+			a
+				transition(all 0.3s ease-in-out)
+				
+				img
+					width 100%
+					
+				&:hover
+					opacity 0.7
+
+/*Las mediaqueries*/
+@media screen and (min-width: 540px)
+	section
+		.mensaje_home
+			h3
+				color amarillo_patito
+
+	.posts
+		article
+			figure
+				float left
+				margin 1em
+
+			.resumen
+				h3
+					text-align left
+
+		.ver_mas
+			float right
+
+	.widget_home
+		article
+			display inline-block
+			margin 0 1em
+@media screen and (min-width: 800px)
+	section
+		.slideshow_home
+			.cycle-slideshow
+				max-width 640px
+
+@media screen and (min-width: 1200px)
+	section
+		.slideshow_home
+			.cycle-slideshow
+				max-width 900px
+	
+	.wrapper
+		margin 0 auto
+		max-width 1200px
+		position relative
