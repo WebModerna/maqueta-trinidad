@@ -33,8 +33,9 @@ function inicio()
 {   
 	$('#menu').on("click", transicion_abrir);
 };
-function transicion_abrir()
+function transicion_abrir(ev)
 {   
+	ev.preventDefault();
 	var abrir = 
 	{
 		height: 'auto',
@@ -48,15 +49,28 @@ function transicion_abrir()
 	/*cerrando el menú*/
 	$('#menu').on("click", transicion_cerrar);
 	
-	function transicion_cerrar()
+	function transicion_cerrar(ev)
 	{
+		ev.preventDefault();
 		var cerrar =
 		{
 			height: 0,
 			opacity: 0,
 			visibility: 'hidden'
-		}
+		};
 		$('#header_nav').css(cerrar);
+		//Para asegurarse el menú abierto o cerrado cuando se redimensione la pantalla
+		$(window).resize(redimensionador);
+		function redimensionador()
+		{
+			var ancho = $(window).width();
+			if (ancho >= 1200)
+			{
+				$('#header_nav').css(abrir);
+			} else {
+				$('#header_nav').css(cerrar);
+			};
+		};
 		$('#menu').off("click", transicion_cerrar);
 		$('#menu').on("click", transicion_abrir);
 	};
