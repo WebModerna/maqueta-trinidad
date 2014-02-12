@@ -1,7 +1,7 @@
-@import url(normalizador.css)
+@import url('normalizador.css')
 
 /*Las variables*/
-amarillo_claro = #FFFFaf
+amarillo_claro = rgba(#FFFFaf, 0.7)
 amarillo_patito = #FFFF66
 azul = #007BC4
 celeste = #21AECE
@@ -10,7 +10,7 @@ blanco_transparente = rgba(255,255,255,0.5)
 naranja = #E68C29
 negro = #414141
 negro_transparente  = rgba(0,0,0,0.6)
-negruzco = rgba(0,0,0,0.25)
+negruzco = rgba(0,0,0,0.35)
 teal_claro = #006666
 teal_oscuro = #003333
 verde_claro = #6BAA58
@@ -35,6 +35,12 @@ box-shadow_lindo()
 	-ms-box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
 	-moz-box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
 	-webkit-box-shadow 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+box-shadow_lindo_reves()
+	box-shadow 0px 1px 0px 0px rgba(0,0,0,0.25) inset, 0px -15px 15px 0px rgba(255,255,255,0.5) inset
+	-o-box-shadow 0px 1px 0px 0px rgba(0,0,0,0.25) inset, 0px -15px 15px 0px rgba(255,255,255,0.5) inse
+	-ms-box-shadow 0px 1px 0px 0px rgba(0,0,0,0.25) inset, 0px -15px 15px 0px rgba(255,255,255,0.5) inse
+	-moz-box-shadow 0px 1px 0px 0px rgba(0,0,0,0.25) inset, 0px -15px 15px 0px rgba(255,255,255,0.5) inse
+	-webkit-box-shadow 0px 1px 0px 0px rgba(0,0,0,0.25) inset, 0px -15px 15px 0px rgba(255,255,255,0.5) inse
 box-sizing()
 	box-sizing border-box
 	-o-box-sizing border-box
@@ -65,8 +71,18 @@ transition()
 	-ms-transition arguments
 	-moz-transition arguments
 	-webkit-transition arguments
+background_form()
+	background: #003333;
+	background: -moz-linear-gradient(left, #003333 0%, #36667c 48%, #36667c 54%, #003333 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#003333), color-stop(48%,#36667c), color-stop(54%,#36667c), color-stop(100%,#003333));
+	background: -webkit-linear-gradient(left, #003333 0%,#36667c 48%,#36667c 54%,#003333 100%);
+	background: -o-linear-gradient(left, #003333 0%,#36667c 48%,#36667c 54%,#003333 100%);
+	background: -ms-linear-gradient(left, #003333 0%,#36667c 48%,#36667c 54%,#003333 100%);
+	background: linear-gradient(to right, #003333 0%,#36667c 48%,#36667c 54%,#003333 100%);
+	/*filter: unquote('progid:DXImageTransform.Microsoft.gradient( startColorstr='#003333', endColorstr='#003333',GradientType=1 )');*/
+
 background_header()
-	background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmY5OSIgc3RvcC1vcGFjaXR5PSIwLjczIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDY2NjYiIHN0b3Atb3BhY2l0eT0iMC43MyIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+')
+	background url('../img/transparent_1x1.png')
 	background -moz-linear-gradient(top, rgba(255,255,153,0.63) 0%, rgba(0,102,102,0.63) 100%)
 	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,153,0.63)), color-stop(100%,rgba(0,102,102,0.73)))
 	background -webkit-linear-gradient(top, rgba(255,255,153,0.63) 0%,rgba(0,102,102,0.63) 100%)
@@ -76,7 +92,6 @@ background_header()
 	/*filter: unquote('progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffff99', endColorstr='#ba006666',GradientType=0 )');*/
 background_boton()
 	background rgb(0,102,102)
-	background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjY2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDMzMzMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+')
 	background -moz-linear-gradient(top, rgba(0,102,102,1) 0%, rgba(0,51,51,1) 100%)
 	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,102,102,1)), color-stop(100%,rgba(0,51,51,1)))
 	background -webkit-linear-gradient(top, rgba(0,102,102,1) 0%,rgba(0,51,51,1) 100%)
@@ -110,8 +125,13 @@ body
 	text-align center
 
 	.wrapper
-		background url('../img/body_bg.jpg') top left fixed repeat-y
-		background-size 100%
+		background rgba(black, 0.5) url('../img/body_bg.jpg') top left fixed repeat-y
+		background-size auto 100%
+
+		.primer_section
+			background rgba(black,0.5)
+			overflow hidden
+			padding-bottom 1em
 
 footer
 	background verde_claro
@@ -288,11 +308,26 @@ section
 		h3
 			color blanco
 			font-family 'Orbitron'
+			font-size 1.3em
 			font-weight normal
-
+			line-height 2em
+			margin 0.5em auto
+			max-width 900px
+			padding 0.1em 0.5em
+			&:after
+			&:before
+				font-size 1.5em
+				font-family monospace
+				
+			&:after
+				content ' "'
+				
+			&:before
+				content '" '
+				
 /*Los ids*/
 #top_bg
-	background negro_transparente
+	background negruzco
 	position absolute
 	top 2em
 	height 45em
@@ -317,6 +352,7 @@ section
 .posts
 	article
 		background amarillo_claro
+		box-shadow_lindo_reves()
 		margin 1px auto
 		overflow hidden
 		padding 0.5em
@@ -330,13 +366,14 @@ section
 
 			figcaption
 				color blanco
+				margin-top 0.5em
 
 			img
 				margin-bottom -1px
 				transition(all 0.4s ease-out)
 				width 100%
 				&:hover
-					box-shadow_lindo()
+					box-shadow_lindo_reves()
 					opacity 0.7
 
 		.resumen
@@ -357,8 +394,6 @@ section
 				display inline-block
 				font-family 'Orbitron'
 				padding 0.3em 0.5em
-				position absolute
-				right 1em
 				text-decoration none
 				transition(all 0.4s ease-in-out)
 				
@@ -375,6 +410,67 @@ section
 				padding 0.1em 0.5em
 				text-shadow
 
+.tarifas
+	.formulario
+		background_form()
+		border 5px solid verde_claro
+		border-radius(1em)
+		box-shadow(0px 0px 5px #000)
+		color amarillo_patito
+		margin 1em auto
+		padding 1em 1.5em
+		max-width 350px
+		text-align left
+		
+		h4
+			color blanco
+			font-size 1.5em
+			font-weight normal
+			text-align center
+		
+		input, textarea
+			background verde_claro
+			border none
+			display block
+			font-size 1.2em
+			margin 0.5em auto
+			width 100%
+			&:focus
+				box-shadow(0px 0px 5px 5px naranja)
+
+		input[type="date"]
+			max-width 200px
+			margin-left 0
+
+		input[name="personas"] 
+		input[type="submit"]
+			display inline-block
+			max-width 150px
+			width auto
+
+		input[type="submit"]
+			background_boton()
+			border 2px solid verde_claro
+			border-radius(0.5em)
+			bottom 1em
+			box-shadow_lindo()
+			color amarillo_patito
+			display inline-block
+			padding 0.5em 0.7em
+			text-decoration none
+			text-shadow_lindo()
+			transition(all 0.4s ease-in-out)
+			
+			&:hover
+				background naranja
+				color blanco
+
+	.lista_precios
+		table
+			color blanco
+
+
+
 .widget_home, .posts
 	article
 		figure
@@ -389,6 +485,8 @@ section
 			padding 0 0 1em 0
 
 			figcaption
+				margin-top 0.5em
+				
 				a
 					color amarillo_patito
 					transition(all 0.3s ease-in-out)
@@ -406,12 +504,16 @@ section
 					opacity 0.7
 
 /*Las mediaqueries*/
-@media screen and (min-width: 540px)
+@media screen and (min-width: 690px)
 	section
 		.mensaje_home
 			h3
 				color amarillo_patito
 
+		.slideshow_home
+			.cycle-slideshow
+				max-width 640px
+	
 	.posts
 		article
 			figure
@@ -429,13 +531,24 @@ section
 		article
 			display inline-block
 			margin 0 1em
-@media screen and (min-width: 800px)
-	section
-		.slideshow_home
-			.cycle-slideshow
-				max-width 640px
+
+// @media screen and (min-width: 800px)
 
 @media screen and (min-width: 1200px)
+	body
+		background url('../img/body_bg.jpg') top center fixed repeat-y
+		background-size 100%
+
+		.wrapper
+			background rgba(black, 0.2)
+			margin 0 auto
+			max-width 1200px
+			position relative
+
+			.primer_section
+				background none
+				padding-bottom 0
+
 	header
 		nav
 			background none
@@ -467,7 +580,6 @@ section
 
 	section
 		.mensaje_home
-			font-size 1.3em
 			padding 0 2em
 
 		.slideshow_home
@@ -477,7 +589,6 @@ section
 	#top_bg
 		top 0
 	
-	.wrapper
-		margin 0 auto
-		max-width 1200px
-		position relative
+	.posts
+		max-width 95%
+		margin auto
