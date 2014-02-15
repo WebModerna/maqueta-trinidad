@@ -49,6 +49,19 @@ box-sizing()
 	-ms-box-sizing border-box
 	-moz-box-sizing border-box
 	-webkit-box-sizing border-box
+column-count()
+	column-count arguments
+	-o-column-count arguments
+	-ms-column-count arguments
+	-moz-column-count arguments
+	-webkit-column-count arguments
+column-gap()
+	column-gap arguments
+	-o-column-gap arguments
+	-ms-column-gap arguments
+	-moz-column-gap arguments
+	-webkit-column-gap arguments
+	
 text-shadow()
 	text-shadow arguments
 	-o-text-shadow arguments
@@ -127,7 +140,7 @@ body
 	text-align center
 
 	.wrapper
-		background rgba(black, 0.5) url('../img/body_bg.jpg') top left fixed repeat-y
+		background rgba(black, 0.5) url('../img/body_bg_700.jpg') top left fixed no-repeat
 		background-size auto 100%
 
 		.primer_section
@@ -201,7 +214,7 @@ header
 					background verde_transparente
 					color blanco
 					display block
-					font-family 'Orbitron'
+					font-family 'Open Sans'
 					font-size 1.1em
 					padding 0.7em 0.9em
 					text-decoration none
@@ -249,7 +262,7 @@ header
 			
 			figcaption
 				color amarillo_patito
-				font-family 'Orbitron'
+				font-family 'Open Sans'
 				font-size 19px
 				font-weight lighter
 			img
@@ -309,7 +322,7 @@ section
 	.mensaje_home
 		h3
 			color blanco
-			font-family 'Orbitron'
+			font-family 'Open Sans'
 			font-size 1.3em
 			font-weight normal
 			line-height 2em
@@ -359,7 +372,15 @@ section
 			border-radius(0.5em)
 			width 100%
 
-		
+.mapas
+	background negruzco
+	padding 1em 0
+	article
+		figure
+			margin 1em auto;
+			max-width 300px
+			img
+				width 100%
 
 .ir_arriba
 	bottom 0.1em
@@ -407,7 +428,7 @@ section
 			margin-bottom 3em
 
 			h3
-				font-family 'Orbitron'
+				font-family 'Open Sans'
 				text-align center
 
 			
@@ -444,6 +465,7 @@ section
 		input, textarea
 			background verde_claro
 			border none
+			border-radius(0.2em)
 			display block
 			font-size 1.2em
 			margin 0.5em auto
@@ -521,7 +543,7 @@ section
 	box-shadow_lindo()
 	color amarillo_patito
 	display inline-block
-	font-family 'Orbitron'
+	font-family 'Open Sans'
 	margin 0.5em
 	padding 0.3em 0.5em
 	text-decoration none
@@ -564,7 +586,17 @@ section
 					opacity 0.7
 
 /*Las mediaqueries*/
+@media screen and (min-width: 400px)
+	body
+		.wrapper
+			background-size 100%
+
 @media screen and (min-width: 690px)
+	body
+		.wrapper
+			background rgba(black, 0.5) url('../img/body_bg_1200.jpg') top left fixed no-repeat
+		background-size 100%
+	
 	section
 		.mensaje_home
 			h3
@@ -585,7 +617,15 @@ section
 		figure
 			float right
 			margin 2em 1em 1em 1em
+
+		ul
+			column-count(2)
+			column-gap(1em)
 		
+	.mapas
+		article
+			figure
+				max-width 500px
 
 	.posts
 		article
@@ -618,11 +658,9 @@ section
 			display inline-block
 			margin 0 1em
 
-// @media screen and (min-width: 800px)
-
 @media screen and (min-width: 1200px)
 	body
-		background url('../img/body_bg.jpg') top center fixed repeat-y
+		background url('../img/body_bg_full.jpg') top left fixed no-repeat
 		background-size 100%
 
 		.wrapper
@@ -675,6 +713,15 @@ section
 
 	.departamentos
 		figure
+			margin 1em
+		ul
+			column-count(3)
+			column-gap(0.5em)
+
+	.mapas
+		article
+			display inline-block
+			vertical-align top
 			margin 1em
 	
 	.posts

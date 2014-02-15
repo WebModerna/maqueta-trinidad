@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<html lang="es-ES">
 <head>
 	<meta charset="utf-8" />
 	<title>Departamentos Trinidad</title>
@@ -29,24 +26,22 @@
 	<meta name="msapplication-TileImage" content="img/mstile-144x144.png" />
 	<!-- El Favicón -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	<!--[if IE 8]>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<script type="text/javascript" src="js/html5.js"></script>
-	<script type="text/javascript" src="js/respond.js"></script>
-	<script type="text/javascript" src="js/selectivizr-min.js"></script>
-	<link type="text/css" rel="stylesheet" href="css/styleIE8.min.css" />
-	<![endif]-->
+	<!-- Los estilos -->
+	<link rel="stylesheet" href="css/style.min.css" />
 	<!--[if gte IE 9]>
 	<style type="text/css">.gradient{filter:none;}</style>
 	<![endif]-->
-	<!-- Los estilos -->
-	<link href='http://fonts.googleapis.com/css?family=Orbitron:400,700,500' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.min.css" />
+	<!--[if IE 8]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link type="text/css" rel="stylesheet" href="css/style-IE8.min.css" />
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/selectivizr-min.js"></script>
+	<![endif]-->
+
 </head>
 <body>
-	<!--[if lt IE 7]>
+	<!--[if lt IE 8]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<p class="browsehappy">Estás usando un navegador <strong>muuuy viejo y desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualizá tu navegador</a> para mejorar tu experiencia :-)</p>
 	<![endif]-->
@@ -58,7 +53,8 @@
 				<img src="img/boton_menu_web.png" alt="Menú" />
 			</button>
 			<ul id="header_nav">
-				<li class="current-menu-item"><a href="#">Inicio</a></li>
+				<li class="current-menu-item"><a href="index.html">Inicio</a></li>
+				<li><a href="desubicacion.html">Desubicación</a></li>
 				<li><a href="departamentos.html">Departamentos</a></li>
 				<li><a href="tarifas.html">Tarifas</a></li>
 				<li><a href="noticias.html">Noticas</a></li>
@@ -174,6 +170,6 @@
 	</footer>
 	<a class="ir_arriba" href="#"></a>
 </div><!-- .wrapper -->
-	<script type="text/javascript" src="js/main.js"></script>
+<script async type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

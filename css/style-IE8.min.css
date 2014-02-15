@@ -1,0 +1,353 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot?-a6mqj2');
+	src: url('fonts/icomoon.eot?#iefix-a6mqj2') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-a6mqj2') format('woff'),
+		url('fonts/icomoon.ttf?-a6mqj2') format('truetype'),
+		url('fonts/icomoon.svg?-a6mqj2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body
+{
+	font-family: 'Open Sans';
+	font-size: 16px;
+	text-align: center;
+}
+footer
+{
+	background: #6BAA58;
+	color: #eee;
+	padding: 1em;
+}
+footer ul li
+{
+	display: inline-block;
+}
+footer ul li a
+{
+	color: #eee;
+	display: block;
+	font-family: 'icomoon';
+	font-size: 2em;
+	padding:0.1em 0.2em;
+	text-decoration: none;
+}
+footer ul li a.facebook:before
+{
+	content: "\e600";
+}
+footer ul li a.feed:before
+{
+	content: "\e604";
+}
+footer ul li a.google:before
+{
+	content: "\e601";
+}
+footer ul li a.mail:before
+{
+	content: "\e602";
+}
+footer ul li a.twitter:before
+{
+	content: "\e603";
+}
+footer ul li a:hover
+{
+	color: #aaa;
+}
+header
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffff99', endColorstr='#ba006666',GradientType=0 );
+	overflow: hidden;
+}
+header nav ul
+{
+	position: relative;
+	top: -1em;
+}
+header nav ul li a
+{
+	color: #eee;
+	display: block;
+	font-size: 1.2em;
+	padding: 0.3em 0.5em;
+	text-decoration: none;
+}
+header nav ul li.current-menu-item a, header nav ul li.current_page_item a
+{
+	background: #E68C29;
+}
+header nav ul li.current-menu-item a:hover
+{
+	color: #E68C29;
+}
+header nav ul li a:hover
+{
+	background: url(../img/fancybox_overlay.png);
+}
+header .logos .logo
+{
+	display: inline-block;
+	max-width: 100px;
+}
+header .logos .logo img
+{
+	width: 100%;
+}
+header .logos .trinidad
+{
+	display: inline-block;
+}
+header .logos .trinidad h1 figcaption
+{
+	color: #FFFF66;
+	font-family: 'Open Sans';
+	font-size: 19px;
+	font-weight: normal;
+}
+header .logos .trinidad h1 img
+{
+	vertical-align: middle;
+	width: 240px;
+}
+
+
+#top_bg
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55000000', endColorstr='#55000000',GradientType=0 );
+	height: 45em;
+	position: absolute;
+	top: 2em;
+	width: 100%;
+	z-index: -1;
+}
+.departamentos
+{
+	color: #eee;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 );
+	margin: 4px auto;
+	text-align: left;
+}
+.departamentos h3
+{
+	color: #FFFF66;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+.departamentos figure
+{
+	max-width: 300px;
+}
+.departamentos figure img
+{
+	width: 100%;
+}
+.mapas
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 );
+}
+.mapas article figure
+{
+	margin: 2em;
+	max-width: 500px;
+}
+.mapas article figure img
+{
+	width: 100%;
+}
+.mensaje_home
+{
+	font-size: 1.3em;
+	font-weight: lighter;
+	margin: auto;
+	text-align: center;
+	width: 70%;
+}
+.posts article
+{
+	display: block;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99FFFF66', endColorstr='#99FFFF66',GradientType=0 );
+	margin: 4px auto;
+	overflow: hidden;
+	padding-right: 1em;
+	text-align: left;
+}
+.posts article figcaption
+{
+	text-align: center;
+	color: #eee;
+}
+.posts article .tags
+{
+	background: gray;
+	display: inline-block;
+	padding: 0.2em 0.3em;
+	color: #ddd;
+}
+.slideshow_home
+{
+	margin: 1em auto;
+	position: relative;
+	max-width: 900px;
+}
+.slideshow_home img
+{
+	width: 100%;
+}
+.slideshow_home .navegacion
+{
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	z-index: 124;
+}
+.slideshow_home .navegacion a
+{
+	color: #fff;
+	font-family: 'icomoon';
+	font-size: 2em;
+	margin: 0 0.2em;
+	overflow: hidden;
+	text-decoration: none;
+}
+.slideshow_home .navegacion a:hover
+{
+	color: yellow;
+}
+.slideshow_home .navegacion a:active
+{
+	color: orange;
+}
+.slideshow_home .navegacion a.back
+{
+	float: left;
+}
+.slideshow_home .navegacion a.back:before
+{
+	content: "\e608";
+}
+.slideshow_home .navegacion a.next
+{
+	float: right;
+}
+.slideshow_home .navegacion a.next:before
+{
+	content: "\e605";
+}
+.tarifas
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#996BAA58', endColorstr='#996BAA58',GradientType=0 );
+}
+.tarifas table
+{
+	border: 3px solid #6BAA58;
+	border-collapse: separate;
+	border-spacing: 2px;
+	color: #eee;
+}
+.tarifas table tr td
+{
+	padding: 0.3em;
+}
+.tarifas table tr td[colspan="4"]
+{
+	text-align:left;
+}
+.tarifas table tr td[colspan="4"], .tarifas table tr th
+{
+	background: #6BAA58;
+}
+.tarifas table tr th[colspan="4"]
+{
+	background: #395D2A;
+	padding: 0.5em;
+}
+.tarifas table tr:nth-child(even) td
+{
+	background: #6F8A51;
+}
+.tarifas table tr:nth-child(odd) td
+{
+	background: #A1A133;
+}
+.tarifas .formulario
+{
+	border: 5px solid #6BAA58;
+	color: #FFFF66;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07393c', endColorstr='#36667C',GradientType=1 );
+	margin: 1em auto;
+	max-width: 350px;
+	padding: 0.5em 1.5em;
+	text-align: left;
+}
+.tarifas .formulario h4
+{
+	color: #eee;
+	text-align: center;
+}
+.tarifas .formulario input, .tarifas .formulario textarea
+{
+	display: block;
+	width: 100%;
+}
+.tarifas .formulario input[name="personas"], .tarifas .formulario input[type="submit"]
+{
+	display:inline-block;
+	max-width:150px;
+	width:auto;
+}
+.tarifas .formulario input[type="submit"]
+{
+	background: #6BAA58;
+	border: none;
+	color: #eee;
+	font-weight: bolder;
+	padding: 0.5em 1em;
+}
+.tarifas .formulario input[type="submit"]:hover
+{
+	background: #A1A133;
+}
+.ver_mas
+{
+	background: teal;
+	color: yellow;
+	padding: 0.3em 0.5em;
+	text-decoration: none;
+}
+.ver_mas:hover
+{
+	background: orange;
+	color: #eee;
+}
+.widget_home article figure, .posts article figure
+{
+	border: 3px solid #6BAA58;
+	background: teal;
+	display: block;
+	margin: 1em 0;
+	max-width: 300px;
+}
+.widget_home article figure figcaption
+{
+	padding-bottom: 0.5em;
+}
+.widget_home article figure figcaption a
+{
+	color: #eee;
+	text-decoration: none;
+}
+.widget_home article figure figcaption a:hover
+{
+	text-decoration: underline;
+}
+.widget_home article figure img, .posts article figure img
+{
+	width: 100%;
+}
+.wrapper
+{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22000000', endColorstr='#22000000',GradientType=0 );
+}
