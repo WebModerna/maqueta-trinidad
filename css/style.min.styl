@@ -141,7 +141,7 @@ body
 
 	.wrapper
 		background rgba(black, 0.5) url('../img/body_bg_700.jpg') top left fixed no-repeat
-		background-size auto 100%
+		background-size 100%
 
 		.primer_section
 			background rgba(black,0.5)
@@ -503,8 +503,6 @@ section
 	.lista_precios
 		table
 			background verde_transparente
-			border-collapse separate
-			border-spacing 4px
 			box-shadow(0px 0px 5px #000)
 			color blanco
 			margin 0 auto
@@ -512,7 +510,7 @@ section
 
 			tr
 				td
-					padding 0.3em
+					padding 0.35em
 
 				td[colspan="4"]
 					text-align left
@@ -520,7 +518,7 @@ section
 				th, td[colspan="4"]
 					background verde_claro
 					box-shadow_lindo()
-					padding 0.5em
+					padding 0.5em 0.3em
 				
 				th[colspan="4"]
 					background #395D2A
@@ -590,6 +588,19 @@ section
 	body
 		.wrapper
 			background-size 100%
+
+	.tarifas
+		.lista_precios
+			table
+				border-collapse separate
+				border-spacing 4px
+				
+				tr
+					td
+						padding 0.5em
+
+					th, td[colspan="4"]
+						padding 0.5em
 
 @media screen and (min-width: 690px)
 	body
